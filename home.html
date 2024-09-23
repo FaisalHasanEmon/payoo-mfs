@@ -33,12 +33,17 @@
             <div class="divider"></div>
             <!-- User Action Button -->
             <div>
-              <button class="btn btn-lg">Add Money</button>
-              <button class="btn btn-lg">Cash Out</button>
+              <button id="bt-show-add-money-form" class="btn btn-lg">
+                Add Money
+              </button>
+              <button id="bt-show-cash-out" class="btn btn-lg">Cash Out</button>
             </div>
             <div class="divider"></div>
             <!-- Add Money Section Starts -->
-            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div
+              id="add-money-form"
+              class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+            >
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
@@ -73,11 +78,53 @@
               </form>
             </div>
             <!-- Add Money Section Ends -->
+            <!-- Cash Out Section Starts -->
+            <div
+              id="cash-out-form"
+              class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+            >
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Cash Out Amount"
+                    class="input input-bordered"
+                    id="input-cash-out"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin</span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="Pin Number"
+                    class="input input-bordered"
+                    autocomplete="off"
+                    id="input-cash-out-pin"
+                    required
+                  />
+                </div>
+                <div class="form-control mt-6">
+                  <button id="btn-cash-out" class="btn btn-primary">
+                    Cash Out
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- Cash Out Section Ends -->
           </div>
         </div>
       </div>
     </main>
 
-    <script src="js/home.js"></script>
+    <!-- <script src="js/home.js"></script> -->
+    <script src="js/addMoney.js"></script>
+    <script src="js/cashOut.js"></script>
+    <script src="js/fatures.js"></script>
   </body>
 </html>
