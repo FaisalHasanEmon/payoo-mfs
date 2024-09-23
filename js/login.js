@@ -18,7 +18,7 @@ document
     if (phoneNumber === "5" && pinNumber === "1234") {
       //   alert("Login Successfull");
       //   step-5: Allow user to use the website
-      window.location.href = "/home.html";
+      window.location.href = "home.html";
     } else {
       alert("Incorrect pin and phone number");
     }
